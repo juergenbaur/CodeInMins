@@ -1,7 +1,7 @@
 managed implementation in class zbp_ju_i_student_5000 unique;
 strict ( 1 );
 
-define behavior for zju_i_student_5000 //alias <alias_name>
+define behavior for zju_i_student_5000 alias Students
 persistent table ZJU_RAP_5000
 lock master
 authorization master ( instance )
@@ -20,6 +20,7 @@ authorization master ( instance )
     Lastname = lastname;
     Age = age;
     Course = course;
+    Courseduration = courseduration;
     Status = status;
     Gender = gender;
     Dob = dob;

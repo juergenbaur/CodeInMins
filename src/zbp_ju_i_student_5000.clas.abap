@@ -1,15 +1,5 @@
-class ZBP_JU_I_STUDENT_5000 definition
-  public
-  abstract
-  final
-  create public .
-
-public section.
-protected section.
-private section.
+CLASS zbp_ju_i_student_5000 DEFINITION PUBLIC ABSTRACT FINAL FOR BEHAVIOR OF zju_i_student_5000.
 ENDCLASS.
 
-
-
-CLASS ZBP_JU_I_STUDENT_5000 IMPLEMENTATION.
+CLASS zbp_ju_i_student_5000 IMPLEMENTATION.
 ENDCLASS.
