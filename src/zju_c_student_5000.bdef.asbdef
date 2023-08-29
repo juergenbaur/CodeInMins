@@ -1,11 +1,9 @@
 projection;
-strict ( 1 );
+strict ( 2 );
 
-define behavior for zju_c_student_5000 alias Student
+define behavior for zju_c_student_5000  alias Student
 {
   use create;
   use update;
   use delete;
-
-  use   action setAdmitted;
 }

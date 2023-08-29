@@ -1,8 +1,8 @@
 managed implementation in class zbp_ju_i_student_5000 unique;
-strict ( 1 );
+strict ( 2 );
 
 define behavior for zju_i_student_5000 alias Student
-persistent table ZJU_RAP_5000
+persistent table zju_rap_5000
 lock master
 authorization master ( instance )
 //etag master <field_name>
@@ -10,22 +10,21 @@ authorization master ( instance )
   create;
   update;
   delete;
-// Key field has managed numbering and is read only immer bezogen auf die Tabelle
-  field ( numbering : managed, readonly ) Id;
-  action ( features : instance ) setAdmitted result [1] $self;
+
+  field( numbering : managed, readonly ) Id;
 
   mapping for zju_rap_5000
-    {
-    Id = id;
-    Firstname = firstname;
-    Lastname = lastname;
-    Age = age;
-    Course = course;
-    Courseduration = courseduration;
-    Status = status;
-    Gender = gender;
-    Dob = dob;
-    Lastchangedat = lastchangedat;
-    Locallastchangedat = locallastchangedat;
+  {
+      Id                 =  id;
+      Firstname          =  firstname;
+      Lastname           =  lastname;
+      Age                =  age;
+      Course             =  course;
+      Courseduration     =  courseduration;
+      Status             =  status;
+      Gender             =  gender;
+      Dob                =  dob;
+      Lastchangedat      =  lastchangedat;
+      Locallastchangedat =  locallastchangedat;
   }
 }
